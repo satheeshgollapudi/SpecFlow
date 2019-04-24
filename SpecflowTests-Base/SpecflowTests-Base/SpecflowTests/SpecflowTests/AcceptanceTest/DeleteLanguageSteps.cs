@@ -54,7 +54,7 @@ namespace SpecflowTests.AcceptanceTest
             }
             catch (Exception e)
             {
-                CommonMethods.test.Log(LogStatus.Fail, "Test Failed");
+                CommonMethods.test.Log(LogStatus.Fail, "Test Failed",e.Message);
             }
             }
           
