@@ -89,62 +89,74 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="AcceptanceTest\AddLanguageSteps.cs" />
-    <Compile Include="AcceptanceTest\CancelAddingLanguageSteps.cs" />
-    <Compile Include="AcceptanceTest\CancelEditLanguage.feature.cs">
+    <Compile Include="AcceptanceTest\Features\addingfourDemo.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>addingfourDemo.feature</DependentUpon>
+    </Compile>
+    <Compile Include="AcceptanceTest\Features\Ademo.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ademo.feature</DependentUpon>
+    </Compile>
+    <Compile Include="AcceptanceTest\Tests\AddingfourDemoSteps.cs" />
+    <Compile Include="AcceptanceTest\Tests\AddLanguageSteps.cs" />
+    <Compile Include="AcceptanceTest\Tests\AdemoSteps.cs" />
+    <Compile Include="AcceptanceTest\Tests\CancelAddingLanguageSteps.cs" />
+    <Compile Include="AcceptanceTest\Features\CancelEditLanguage.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CancelEditLanguage.feature</DependentUpon>
     </Compile>
-    <Compile Include="AcceptanceTest\CancelEditLanguageSteps.cs" />
-    <Compile Include="AcceptanceTest\CertificateTabProfilePage.feature.cs">
+    <Compile Include="AcceptanceTest\Tests\CancelEditLanguageSteps.cs" />
+    <Compile Include="AcceptanceTest\Features\CertificateTabProfilePage.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CertificateTabProfilePage.feature</DependentUpon>
     </Compile>
-    <Compile Include="AcceptanceTest\CertificateTabProfilePageSteps.cs" />
-    <Compile Include="AcceptanceTest\DeleteLanguage.feature.cs">
+    <Compile Include="AcceptanceTest\Tests\CertificateTabProfilePageSteps.cs" />
+    <Compile Include="AcceptanceTest\Features\DeleteLanguage.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DeleteLanguage.feature</DependentUpon>
     </Compile>
-    <Compile Include="AcceptanceTest\DeleteLanguageSteps.cs" />
-    <Compile Include="AcceptanceTest\EditLanguage.feature.cs">
+    <Compile Include="AcceptanceTest\Tests\DeleteLanguageSteps.cs" />
+    <Compile Include="AcceptanceTest\Features\EditLanguage.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>EditLanguage.feature</DependentUpon>
     </Compile>
-    <Compile Include="AcceptanceTest\EditLanguageSteps.cs" />
-    <Compile Include="AcceptanceTest\EducationTabProfilePage.feature.cs">
+    <Compile Include="AcceptanceTest\Tests\EditLanguageSteps.cs" />
+    <Compile Include="AcceptanceTest\Features\EducationTabProfilePage.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>EducationTabProfilePage.feature</DependentUpon>
     </Compile>
-    <Compile Include="AcceptanceTest\Parameterisation.feature.cs">
+    <Compile Include="AcceptanceTest\Features\Parameterisation.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Parameterisation.feature</DependentUpon>
     </Compile>
-    <Compile Include="AcceptanceTest\ParameterisationSteps.cs" />
-    <Compile Include="AcceptanceTest\AddingMoreThanFourLanguagesSteps.cs" />
-    <Compile Include="AcceptanceTest\SkillsTabProfilePage.feature.cs">
+    <Compile Include="AcceptanceTest\Tests\ParameterisationSteps.cs" />
+    <Compile Include="AcceptanceTest\Tests\AddingMoreThanFourLanguagesSteps.cs" />
+    <Compile Include="AcceptanceTest\Features\SkillsTabProfilePage.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>SkillsTabProfilePage.feature</DependentUpon>
     </Compile>
-    <Compile Include="AcceptanceTest\SkillsTabProfilePageSteps.cs" />
-    <Compile Include="AcceptanceTest\AddingMoreThanFourLanguages.feature.cs">
+    <Compile Include="AcceptanceTest\Tests\SkillsTabProfilePageSteps.cs" />
+    <Compile Include="AcceptanceTest\Features\AddingMoreThanFourLanguages.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AddingMoreThanFourLanguages.feature</DependentUpon>
     </Compile>
-    <Compile Include="AcceptanceTest\CancelAddingLanguage.feature.cs">
+    <Compile Include="AcceptanceTest\Features\CancelAddingLanguage.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CancelAddingLanguage.feature</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="AcceptanceTest\AddLanguage.feature.cs">
+    <Compile Include="AcceptanceTest\Features\AddLanguage.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AddLanguage.feature</DependentUpon>
@@ -152,45 +164,53 @@
     <Compile Include="Utils\Start.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="AcceptanceTest\CancelEditLanguage.feature">
+    <None Include="AcceptanceTest\Features\addingfourDemo.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>addingfourDemo.feature.cs</LastGenOutput>
+    </None>
+    <None Include="AcceptanceTest\Features\CancelEditLanguage.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>CancelEditLanguage.feature.cs</LastGenOutput>
     </None>
-    <None Include="AcceptanceTest\CertificateTabProfilePage.feature">
+    <None Include="AcceptanceTest\Features\CertificateTabProfilePage.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>CertificateTabProfilePage.feature.cs</LastGenOutput>
     </None>
-    <None Include="AcceptanceTest\DeleteLanguage.feature">
+    <None Include="AcceptanceTest\Features\DeleteLanguage.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>DeleteLanguage.feature.cs</LastGenOutput>
     </None>
-    <None Include="AcceptanceTest\EditLanguage.feature">
+    <None Include="AcceptanceTest\Features\EditLanguage.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>EditLanguage.feature.cs</LastGenOutput>
     </None>
-    <None Include="AcceptanceTest\EducationTabProfilePage.feature">
+    <None Include="AcceptanceTest\Features\EducationTabProfilePage.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>EducationTabProfilePage.feature.cs</LastGenOutput>
     </None>
-    <None Include="AcceptanceTest\Parameterisation.feature">
+    <None Include="AcceptanceTest\Features\Parameterisation.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Parameterisation.feature.cs</LastGenOutput>
     </None>
-    <None Include="AcceptanceTest\SkillsTabProfilePage.feature">
+    <None Include="AcceptanceTest\Features\SkillsTabProfilePage.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>SkillsTabProfilePage.feature.cs</LastGenOutput>
     </None>
-    <None Include="AcceptanceTest\AddingMoreThanFourLanguages.feature">
+    <None Include="AcceptanceTest\Features\AddingMoreThanFourLanguages.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>AddingMoreThanFourLanguages.feature.cs</LastGenOutput>
     </None>
-    <None Include="AcceptanceTest\CancelAddingLanguage.feature">
+    <None Include="AcceptanceTest\Features\CancelAddingLanguage.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>CancelAddingLanguage.feature.cs</LastGenOutput>
     </None>
+    <None Include="AcceptanceTest\Features\Ademo.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Ademo.feature.cs</LastGenOutput>
+    </None>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <None Include="AcceptanceTest\AddLanguage.feature">
+    <None Include="AcceptanceTest\Features\AddLanguage.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>AddLanguage.feature.cs</LastGenOutput>
     </None>
