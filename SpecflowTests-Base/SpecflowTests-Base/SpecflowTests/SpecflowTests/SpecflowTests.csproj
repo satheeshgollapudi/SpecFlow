@@ -94,14 +94,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>addingfourDemo.feature</DependentUpon>
     </Compile>
-    <Compile Include="AcceptanceTest\Features\Ademo.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Ademo.feature</DependentUpon>
-    </Compile>
     <Compile Include="AcceptanceTest\Tests\AddingfourDemoSteps.cs" />
     <Compile Include="AcceptanceTest\Tests\AddLanguageSteps.cs" />
-    <Compile Include="AcceptanceTest\Tests\AdemoSteps.cs" />
     <Compile Include="AcceptanceTest\Tests\CancelAddingLanguageSteps.cs" />
     <Compile Include="AcceptanceTest\Features\CancelEditLanguage.feature.cs">
       <AutoGen>True</AutoGen>
@@ -203,10 +197,6 @@
     <None Include="AcceptanceTest\Features\CancelAddingLanguage.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>CancelAddingLanguage.feature.cs</LastGenOutput>
-    </None>
-    <None Include="AcceptanceTest\Features\Ademo.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>Ademo.feature.cs</LastGenOutput>
     </None>
     <None Include="App.config" />
     <None Include="packages.config" />

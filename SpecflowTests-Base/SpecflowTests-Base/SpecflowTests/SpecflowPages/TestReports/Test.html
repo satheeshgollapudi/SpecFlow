@@ -52,7 +52,7 @@ Keys Sprint 1                            </title>
                                         <i class='mdi-hardware-desktop-windows'></i>
                                     </li>
                                     <li>
-                                        <span class='suite-started-time'>2019-04-28 13:18:42</span>
+                                        <span class='suite-started-time'>2019-12-20 12:34:50</span>
                                     </li>
                                     <li>
                                         <span>v2.41.0</span>
@@ -81,19 +81,19 @@ Keys Sprint 1                            </title>
                                         <div class='col l4 m4 s12'>
                                             <div class='card suite-time'> 
                                                 <span class='panel-name'>Total Time Taken</span> 
-                                                <span class='suite-total-time-taken panel-lead'>0h 0m 4s+736ms</span> 
+                                                <span class='suite-total-time-taken panel-lead'>0h 0m 24s+334ms</span> 
                                             </div> 
                                         </div>
                                         <div class='col l2 m6 s6 suite-start-time'>
                                             <div class='card green-accent'> 
                                                 <span class='panel-name'>Start</span> 
-                                                <span class='panel-lead suite-started-time'>2019-04-28 13:18:42</span> 
+                                                <span class='panel-lead suite-started-time'>2019-12-20 12:34:50</span> 
                                             </div> 
                                         </div>
                                         <div class='col l2 m6 s6 suite-end-time'>
                                             <div class='card pink-accent'> 
                                                 <span class='panel-name'>End</span> 
-                                                <span class='panel-lead suite-ended-time'>2019-04-28 13:18:47</span> 
+                                                <span class='panel-lead suite-ended-time'>2019-12-20 12:35:14</span> 
                                             </div> 
                                         </div>
                                     </div>
@@ -221,17 +221,17 @@ Keys Sprint 1                            </title>
                                             <div class='card-panel no-padding-h no-padding-v'>
                                                 <div class='wrapper'>
                                                     <ul id='test-collection' class='test-collection'>
-                                                            <li class='collection-item test displayed active pass ' extentid='fb4859ae-e43a-46ea-8bee-f16385600f2c'>
+                                                            <li class='collection-item test displayed active fail ' extentid='2dae13e4-8e34-468b-bfaa-23fdc3ebbf49'>
                                                                 <div class='test-head'>
-                                                                    <span class='test-name'>Adding maximum 4 languages </span>
-                                                                    <span class='test-status right label capitalize outline pass'>pass</span>
+                                                                    <span class='test-name'>cancel addind a Language </span>
+                                                                    <span class='test-status right label capitalize outline fail'>fail</span>
                                                                     <span class='category-assigned hide '></span>
                                                                 </div>
                                                                 <div class='test-body'>
                                                                     <div class='test-info'>
-                                                                        <span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-04-28 13:18:43</span>
-                                                                        <span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-04-28 13:18:45</span>
-                                                                        <span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 2s+297ms</span>
+                                                                        <span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-12-20 12:34:51</span>
+                                                                        <span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-12-20 12:34:58</span>
+                                                                        <span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 6s+835ms</span>
                                                                     </div>
                                                                     <div class='test-desc'></div>
                                                                     <div class='test-attributes'>
@@ -242,21 +242,20 @@ Keys Sprint 1                            </title>
                                                                                     <tr>
                                                                                         <th>Status</th>
                                                                                         <th>Timestamp</th>
+                                                                                            <th>StepName</th>
                                                                                         <th>Details</th>
                                                                                     </tr>
                                                                                 </thead>
                                                                                 <tbody>
                                                                                         <tr>
-                                                                                            <td class='status pass'><i class='mdi-action-check-circle'></i></td><td class='timestamp'>13:18:44</td>                                                                                            <td class='step-details'>Test Passed, Maximum is four languages</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td class='status pass'><i class='mdi-action-check-circle'></i></td><td class='timestamp'>13:18:44</td>                                                                                            <td class='step-details'>invalid selector: Unable to locate an element with the xpath expression //thead//tr[1]//th[3]//div[contains(text(), 'Add New')@class='ui teal button '] because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//thead//tr[1]//th[3]//div[contains(text(), 'Add New')@class='ui teal button ']' is not a valid XPath expression.
-  (Session info: chrome=73.0.3683.103)
+                                                                                            <td class='status fail'><i class='mdi-navigation-cancel'></i></td><td class='timestamp'>12:34:56</td>                                                                                                <td class='step-name'>Test Failed</td>
+                                                                                            <td class='step-details'>no such element: Unable to locate element: {"method":"xpath","selector":"//th[contains(text(),'Language')]//ancestor::thead//following-sibling::tbody[0]/tr/td"}
+  (Session info: chrome=79.0.3945.88)
   (Driver info: chromedriver=2.38.551601 (edb21f07fc70e9027c746edd3201443e011a61ed),platform=Windows NT 10.0.17134 x86_64)</td>
                                                                                         </tr>
                                                                                         <tr>
-                                                                                            <td class='status info'><i class='mdi-action-info-outline'></i></td><td class='timestamp'>13:18:45</td>                                                                                            <td class='step-details'>Snapshot below: <img class='report-img' data-featherlight='file:///C:\Users\Home\Desktop\specflow\SpecflowTests-Base\SpecflowTests-Base\SpecflowTests\SpecflowPages\TestReports\Screenshots\satheesh\Report_28-18-2019_1845.jpeg' src='file:///C:\Users\Home\Desktop\specflow\SpecflowTests-Base\SpecflowTests-Base\SpecflowTests\SpecflowPages\TestReports\Screenshots\satheesh\Report_28-18-2019_1845.jpeg' /></td>
+                                                                                            <td class='status info'><i class='mdi-action-info-outline'></i></td><td class='timestamp'>12:34:58</td>                                                                                                <td class='step-name'></td>
+                                                                                            <td class='step-details'>Snapshot below: <img class='report-img' data-featherlight='file:///C:\Users\Home\Desktop\specflow\SpecflowTests-Base\SpecflowTests-Base\SpecflowTests\SpecflowPages\TestReports\Screenshots\satheesh\Report_20-34-2019_3457.jpeg' src='file:///C:\Users\Home\Desktop\specflow\SpecflowTests-Base\SpecflowTests-Base\SpecflowTests\SpecflowPages\TestReports\Screenshots\satheesh\Report_20-34-2019_3457.jpeg' /></td>
                                                                                         </tr>
                                                                                 </tbody>
                                                                             </table>

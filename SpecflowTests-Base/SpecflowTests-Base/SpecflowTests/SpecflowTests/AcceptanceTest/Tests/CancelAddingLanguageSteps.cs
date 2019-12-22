@@ -21,7 +21,7 @@ namespace SpecflowTests.AcceptanceTest
 
             //Add Language
 
-            Driver.driver.FindElement(By.XPath("//input[@name='name']")).SendKeys("English");
+            Driver.driver.FindElement(By.XPath("//input[@name='name']")).SendKeys("french");
 
             //Click on Language Level
             Thread.Sleep(3000);
@@ -44,6 +44,11 @@ namespace SpecflowTests.AcceptanceTest
         {
             try
             {
+                CommonMethods.ExtentReports();
+                Thread.Sleep(1000);
+                CommonMethods.test = CommonMethods.extent.StartTest("cancel addind a Language");
+                //Start the Reports
+
                 IList<IWebElement> Languages = Driver.driver.FindElements(By.XPath("//th[text()='Language']//ancestor::thead//following-sibling::tbody"));
                 int count = Languages.Count();
                 String beforeXPath = "//th[contains(text(),'Language')]//ancestor::thead//following-sibling::tbody[";
@@ -53,7 +58,7 @@ namespace SpecflowTests.AcceptanceTest
                 for (int i = 0; i <= count; i++)
                 {
 
-                    if (Driver.driver.FindElement(By.XPath(beforeXPath + i + AfterXPath)).Text == "English")
+                    if (Driver.driver.FindElement(By.XPath(beforeXPath + i + AfterXPath)).Text == "french")
                     {
                         LangFound = true;
                         CommonMethods.test.Log(LogStatus.Fail, "Test Failed");

@@ -1,4 +1,4 @@
-﻿Feature: AddingFourLanguages
+﻿Feature: AddingmorethanFourLanguages
 
 Scenario Outline: scenario outline user could able to add a language 
 	Given I clicked on the Language tab under Profile page
@@ -9,4 +9,5 @@ Scenario Outline: scenario outline user could able to add a language
 	| Language  |
 	| Bengali   |
 	| Malayalam |
-	
+	| oriya     |
+	| punjabi   |
